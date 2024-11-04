@@ -1,0 +1,15 @@
+2024-11-04 09:04:50,091-INFO-Required pip is installed.
+2024-11-04 09:04:50,651-INFO-Required loguru is installed.
+2024-11-04 09:04:51,226-INFO-Required ipykernel is installed.
+2024-11-04 09:04:51,746-INFO-Required jupyterlab is installed.
+2024-11-04 09:04:52,256-INFO-Required numpy is installed.
+2024-11-04 09:04:52,787-INFO-Required pandas is installed.
+2024-11-04 09:04:53,295-INFO-Required matplotlib is installed.
+2024-11-04 09:04:53,858-INFO-Required seaborn is installed.
+2024-11-04 09:04:54,479-INFO-Required plotly is installed.
+2024-11-04 09:04:54,895-ERROR-Missing required packages: git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
+2024-11-04 09:04:54,897-ERROR-Test Failed: Some packages from requirements.txt are not installed in the virtual environment.
+2024-11-04 09:04:54,898-INFO-.venv folder exists.
+2024-11-04 09:04:54,898-INFO-Progress: 33% - You're 1/3 done - good start!
+2024-11-04 09:04:54,898-INFO-Virtual environment is active.
+2024-11-04 09:04:54,899-INFO-Progress: 66% - You're 2/3 done - almost there!
