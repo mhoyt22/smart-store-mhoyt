@@ -17,6 +17,7 @@ print(f"Initial number of sales: {initial_rows}")
 # Replace blank 'DiscountPercent' with 0
 if 'DiscountPercent' in sales_data.columns:
     sales_data['DiscountPercent'] = sales_data['DiscountPercent'].fillna(0)
+    sales_data['DiscountPercent'] = sales_data['DiscountPercent'].astype(int)
 
 # Replace invalid 'PaymentType' entries with 'Unknown'
 valid_payment_types = ["Cash", "Card", "Gift Card"]
@@ -25,7 +26,7 @@ if 'PaymentType' in sales_data.columns:
 
 # Final count of sales (rows)
 final_rows = sales_data.shape[0]
-print(f"Prepared number of sales (rows) after cleaning: {final_rows}")
+print(f"Prepared number of sales: {final_rows}")
 
 # Write the cleaned data to the new location
 sales_data.to_csv(output_file_path, index=False)

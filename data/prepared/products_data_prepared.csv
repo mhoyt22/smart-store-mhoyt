@@ -1,0 +1,9 @@
+ProductID,ProductName,Category,UnitPrice,StockQuantity,Supplier
+101,laptop,Electronics,793.12,0,Apple
+102,hoodie,Clothing,39.1,38,Nike
+103,cable,Electronics,22.76,14,Apple
+104,hat,Clothing,43.1,22,Nike
+105,football,Sports,19.78,42,Nike
+106,controller,Electronics,88.98,0,Apple
+107,jacket,Clothing,67.02,41,Nike
+108,protector,Electronics,12.56,19,Apple

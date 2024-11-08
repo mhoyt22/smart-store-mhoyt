@@ -1,7 +1,7 @@
 import pandas as pd
 
 # File paths
-input_file_path = r"C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customer_data.csv"
+input_file_path = r"C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customers_data.csv"
 output_file_path = r"C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\prepared\customers_data_prepared.csv"
 
 # Load the data

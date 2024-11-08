@@ -18,6 +18,7 @@ print(f"Initial number of products: {initial_rows}")
 if 'StockQuantity' in products_data.columns:
     products_data['StockQuantity'] = products_data['StockQuantity'].fillna(0)  # Replace NaN with 0
     products_data['StockQuantity'] = products_data['StockQuantity'].apply(lambda x: 0 if x < 0 else x)  # Replace negatives with 0
+    products_data['StockQuantity'] = products_data['StockQuantity'].astype(int)
 
 # Final count of products (rows)
 final_rows = products_data.shape[0]
