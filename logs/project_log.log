@@ -58,3 +58,12 @@
 2024-11-13 13:20:07.341 | INFO     | __main__:main:115 - ======================
 2024-11-13 13:20:07.343 | INFO     | __main__:main:116 - FINISHED data_prep.py
 2024-11-13 13:20:07.345 | INFO     | __main__:main:117 - ======================
+2024-11-13 14:20:51.371 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-13 14:20:51.398 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-13 14:20:51.399 | INFO     | __main__:main:86 - Data warehouse creation complete.
+2024-11-13 14:22:07.511 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-13 14:22:07.528 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-13 14:22:07.529 | INFO     | __main__:main:86 - Data warehouse creation complete.
+2024-11-13 14:23:22.257 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-13 14:23:22.275 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-13 14:23:22.275 | INFO     | __main__:main:86 - Data warehouse creation complete.
