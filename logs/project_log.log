@@ -22,3 +22,39 @@
 2024-11-13 12:17:44.084 | INFO     | __main__:main:34 - Starting sales data preparation...
 2024-11-13 12:17:44.084 | INFO     | __main__:read_sales_data:23 - Reading sales data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\sales_data.csv.
 2024-11-13 12:17:44.118 | INFO     | __main__:main:44 - Sales data preparation complete.
+2024-11-13 12:43:25.218 | INFO     | __main__:main:34 - Starting customer data preparation...
+2024-11-13 12:43:25.219 | INFO     | __main__:read_customers_data:23 - Reading customer data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customers_data.csv.
+2024-11-13 13:12:57.351 | INFO     | __main__:main:35 - ======================
+2024-11-13 13:12:57.351 | INFO     | __main__:main:36 - STARTING data_prep.py
+2024-11-13 13:12:57.351 | INFO     | __main__:main:37 - ======================
+2024-11-13 13:12:57.352 | INFO     | __main__:main:39 - ========================
+2024-11-13 13:12:57.352 | INFO     | __main__:main:40 - Starting CUSTOMERS prep
+2024-11-13 13:12:57.352 | INFO     | __main__:main:41 - ========================
+2024-11-13 13:17:42.577 | INFO     | __main__:main:35 - ======================
+2024-11-13 13:17:42.578 | INFO     | __main__:main:36 - STARTING data_prep.py
+2024-11-13 13:17:42.578 | INFO     | __main__:main:37 - ======================
+2024-11-13 13:17:42.579 | INFO     | __main__:main:39 - ========================
+2024-11-13 13:17:42.579 | INFO     | __main__:main:40 - Starting CUSTOMERS prep
+2024-11-13 13:17:42.580 | INFO     | __main__:main:41 - ========================
+2024-11-13 13:17:42.607 | INFO     | __main__:save_prepared_data:31 - Data saved to C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\prepared\customers_data_prepared.csv
+2024-11-13 13:17:42.607 | INFO     | __main__:main:62 - ========================
+2024-11-13 13:17:42.608 | INFO     | __main__:main:63 - Starting PRODUCTS prep
+2024-11-13 13:17:42.608 | INFO     | __main__:main:64 - ========================
+2024-11-13 13:20:07.220 | INFO     | __main__:main:35 - ======================
+2024-11-13 13:20:07.221 | INFO     | __main__:main:36 - STARTING data_prep.py
+2024-11-13 13:20:07.222 | INFO     | __main__:main:37 - ======================
+2024-11-13 13:20:07.222 | INFO     | __main__:main:39 - ========================
+2024-11-13 13:20:07.223 | INFO     | __main__:main:40 - Starting CUSTOMERS prep
+2024-11-13 13:20:07.224 | INFO     | __main__:main:41 - ========================
+2024-11-13 13:20:07.249 | INFO     | __main__:save_prepared_data:31 - Data saved to C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\prepared\customers_data_prepared.csv
+2024-11-13 13:20:07.251 | INFO     | __main__:main:62 - ========================
+2024-11-13 13:20:07.252 | INFO     | __main__:main:63 - Starting PRODUCTS prep
+2024-11-13 13:20:07.255 | INFO     | __main__:main:64 - ========================
+2024-11-13 13:20:07.284 | INFO     | __main__:save_prepared_data:31 - Data saved to C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\prepared\products_data_prepared.csv
+2024-11-13 13:20:07.285 | INFO     | __main__:main:85 - ========================
+2024-11-13 13:20:07.287 | INFO     | __main__:main:86 - Starting SALES prep
+2024-11-13 13:20:07.288 | INFO     | __main__:main:87 - ========================
+2024-11-13 13:20:07.339 | INFO     | __main__:save_prepared_data:31 - Data saved to C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\prepared\sales_data_prepared.csv
+2024-11-13 13:20:07.341 | INFO     | __main__:main:115 - ======================
+2024-11-13 13:20:07.343 | INFO     | __main__:main:116 - FINISHED data_prep.py
+2024-11-13 13:20:07.345 | INFO     | __main__:main:117 - ======================

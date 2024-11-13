@@ -34,19 +34,9 @@ py scripts\data_prep.py
 ```
 ## Data Preparation
 
-### Step 1 – Process Customer Data
+### Step 1 – Run Data Prep
 ```bash
-py scripts\data_prep_customers.py
-```
-
-### Step 2 – Process Product Data
-```bash
-py scripts\data_prep_products.py
-```
-
-### Step 3 – Process Sales Data
-```bash
-py scripts\data_prep_sales.py
+py scripts\data_prep.py
 ```
 
 ## Commit to GitHub
