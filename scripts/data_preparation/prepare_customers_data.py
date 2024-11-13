@@ -14,9 +14,6 @@ open(output_file_path, 'w').close()
 initial_rows = customer_data.shape[0]
 print(f"Initial number of customers: {initial_rows}")
 
-# Remove duplicates
-customer_data = customer_data[customer_data['Name'] != 'Hermione Grager']
-
 # Round 'LoyaltyPoints' column to whole numbers
 if 'LoyaltyPoints' in customer_data.columns:
     customer_data['LoyaltyPoints'] = customer_data['LoyaltyPoints'].round(0).astype(int)

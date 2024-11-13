@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Project Setup](#project-setup)
+- [Data Preparation](#data-preparation)
 - [Commit to GitHub](#commit-to-github)
 
 ## Project Setup
@@ -30,6 +31,22 @@ py -m datafun_venv_checker.venv_checker
 ### Step 5 - Run the Initial Project Script
 ```bash
 py scripts\data_prep.py
+```
+## Data Preparation
+
+### Step 1 – Process Customer Data
+```bash
+py scripts\data_prep_customers.py
+```
+
+### Step 2 – Process Product Data
+```bash
+py scripts\data_prep_products.py
+```
+
+### Step 3 – Process Sales Data
+```bash
+py scripts\data_prep_sales.py
 ```
 
 ## Commit to GitHub

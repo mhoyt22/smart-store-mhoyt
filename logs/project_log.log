@@ -8,3 +8,17 @@
 2024-11-08 14:55:08.692 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\products_data.csv.
 2024-11-08 14:55:08.693 | INFO     | __main__:read_raw_data:26 - Reading raw data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\sales_data.csv.
 2024-11-08 14:55:08.694 | INFO     | __main__:main:45 - Data preparation complete.
+2024-11-13 12:09:54.002 | INFO     | __main__:main:34 - Starting customer data preparation...
+2024-11-13 12:09:54.003 | INFO     | __main__:read_customers_data:23 - Reading customer data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customers_data.csv.
+2024-11-13 12:15:18.047 | INFO     | __main__:main:34 - Starting customer data preparation...
+2024-11-13 12:15:18.048 | INFO     | __main__:read_customers_data:23 - Reading customer data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customers_data.csv.
+2024-11-13 12:15:18.053 | INFO     | __main__:main:39 - Customer data preparation complete.
+2024-11-13 12:16:06.927 | INFO     | __main__:main:34 - Starting customer data preparation...
+2024-11-13 12:16:06.928 | INFO     | __main__:read_customers_data:23 - Reading customer data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\customers_data.csv.
+2024-11-13 12:16:06.934 | INFO     | __main__:main:39 - Customer data preparation complete.
+2024-11-13 12:17:31.974 | INFO     | __main__:main:34 - Starting product data preparation...
+2024-11-13 12:17:31.975 | INFO     | __main__:read_products_data:23 - Reading product data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\products_data.csv.
+2024-11-13 12:17:31.995 | INFO     | __main__:main:41 - Product data preparation complete.
+2024-11-13 12:17:44.084 | INFO     | __main__:main:34 - Starting sales data preparation...
+2024-11-13 12:17:44.084 | INFO     | __main__:read_sales_data:23 - Reading sales data from C:\Users\mhoyt\OneDrive - nwmissouri.edu\MIS\44432\smart-store-mhoyt\data\raw\sales_data.csv.
+2024-11-13 12:17:44.118 | INFO     | __main__:main:44 - Sales data preparation complete.
