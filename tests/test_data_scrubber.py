@@ -22,7 +22,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 # Import DataScrubber from the scripts module
-from scripts.data_scrubber import DataScrubber  # noqa: E402
+from scripts.data_preparation.data_scrubber import DataScrubber  # noqa: E402
 
 # Create a fake CSV file using StringIO
 csv_data = StringIO("""
