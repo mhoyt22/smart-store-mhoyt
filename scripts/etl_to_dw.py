@@ -28,30 +28,57 @@ def load_data_to_db() -> None:
     """Load prepared data into the data warehouse using the correct table names."""
     try:
         # Connect to the SQLite database
-        conn = sqlite3.connect(DB_PATH)
-        cursor = conn.cursor()
-
-        # Verify database exists
         db_dir = pathlib.Path(DB_PATH).parent
         db_dir.mkdir(parents=True, exist_ok=True)
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+
+        # Drop the tables if they exist
+        logger.info("Dropping existing tables if they exist...")
+        cursor.execute("DROP TABLE IF EXISTS customers;")
+        cursor.execute("DROP TABLE IF EXISTS products;")
+        cursor.execute("DROP TABLE IF EXISTS sales;")
+        conn.commit()
+        logger.info("Existing tables dropped.")
 
         # Extract & Load Customers
-        customers_data = extract_data(CUSTOMERS_DATA)
-        logger.info("Loading customers data into database tables ...")
+        customers_file_path = PREPARED_DATA_DIR.joinpath("customers_data_prepared.csv")
+        try:
+            logger.info("Extracting 'customers' data...")
+            customers_data = pd.read_csv(customers_file_path)
+            logger.info("'customers' data extracted.")
+        except Exception as e:
+            logger.error("Error extracting data from 'customer'")
+            raise
+        logger.info("Loading 'customers' data...")
         customers_data.to_sql("customers", conn, if_exists="replace", index=False)
-        logger.info("Customers data loaded.")
+        logger.info("'customers' data loaded.")
 
         # Extract & Load Products
-        products_data = extract_data(PRODUCTS_DATA)
-        logger.info("Loading products data into database tables ...")
+        products_file_path = PREPARED_DATA_DIR.joinpath("products_data_prepared.csv")
+        try:
+            logger.info("Extracting 'products' data...")
+            products_data = pd.read_csv(products_file_path)
+            logger.info("'products' data extracted.")
+        except Exception as e:
+            logger.error("Error extracting data from 'prodcuts'")
+            raise
+        logger.info("Loading 'prodcuts' data...")
         products_data.to_sql("products", conn, if_exists="replace", index=False)
-        logger.info("Products data loaded.")
+        logger.info("'products' data loaded.")
 
         # Extract & Load Sales
-        sales_data = extract_data(SALES_DATA)
-        logger.info("Loading sales data into database tables ...")
+        sales_file_path = PREPARED_DATA_DIR.joinpath("sales_data_prepared.csv")
+        try:
+            logger.info("Extracting 'sales' data...")
+            sales_data = pd.read_csv(sales_file_path)
+            logger.info("'sales' data extracted.")
+        except Exception as e:
+            logger.error("Error extracting data from 'sales'")
+            raise
+        logger.info("Loading 'sales' data...")
         sales_data.to_sql("sales", conn, if_exists="replace", index=False)
-        logger.info("Sales data loaded.")
+        logger.info("'sales' data loaded.")
 
         # Close connection
         conn.commit()

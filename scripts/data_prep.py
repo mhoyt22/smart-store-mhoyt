@@ -11,7 +11,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 # Now we can import local modules
 from utils.logger import logger  # noqa: E402
-from scripts.data_preparation.data_scrubber import DataScrubber  # noqa: E402
+from scripts.data_scrubber import DataScrubber  # noqa: E402
 
 # Constants
 DATA_DIR: pathlib.Path = PROJECT_ROOT.joinpath("data")
