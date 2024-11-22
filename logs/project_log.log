@@ -232,3 +232,13 @@
 2024-11-22 12:53:59.288 | INFO     | __main__:main:168 - Finished etl_to_dw complete.
 2024-11-22 12:56:13.986 | INFO     | __main__:main:167 - Starting etl_to_dw ...
 2024-11-22 12:56:14.012 | ERROR    | __main__:load_data_to_db:159 - Error during ETL: name 'conn' is not defined
+2024-11-22 13:00:08.191 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-22 13:00:08.212 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-22 13:00:08.213 | INFO     | __main__:main:86 - Data warehouse creation complete.
+2024-11-22 13:00:31.244 | INFO     | __main__:main:166 - Starting etl_to_dw ...
+2024-11-22 13:00:31.260 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 13:00:31.296 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 13:00:31.326 | INFO     | __main__:insert_products:90 - 'products' data loaded.
+2024-11-22 13:00:31.345 | INFO     | __main__:insert_sales:121 - 'sales' data loaded.
+2024-11-22 13:00:31.346 | INFO     | __main__:load_data_to_db:152 - Prepared data successfully loaded into the data warehouse.
+2024-11-22 13:00:31.348 | INFO     | __main__:main:168 - Finished etl_to_dw complete.
