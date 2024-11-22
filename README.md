@@ -11,6 +11,7 @@
       - [customers](#customers)
       - [products](#products)
       - [sales](#sales)
+    - [ETL to DW](#etl-to-dw)
   - [Commit to GitHub](#commit-to-github)
 
 ## Project Setup
@@ -42,13 +43,13 @@ Step 1: Create data_scrubber class <br>
 Step 2: Create data_prep script <br>
 Step 3: Run data_prep sript <br>
 ```bash
-py scripts\data_preparation\data_prep.py
+py scripts\data_prep.py
 ```
 ## Data Warehouse
 
 ### Create Data Warehouse (one-time process)
 ```bash
-py scripts\data_warehouse\create_dw.py
+py scripts\create_dw.py
 ```
 
 ### Schema
@@ -101,6 +102,11 @@ Foreign Key(s): customer_id, product_id, store_id, campaign_id
 | sales_amount      | REAL      | Total sales amount           |
 | discount_percent  | INTEGER   | Total discount percent       |
 | payment_type      | TEXT      | Payment type used            |
+
+### ETL to DW
+```bash
+py scripts\create_dw.py
+```
 
 ## Commit to GitHub
 
