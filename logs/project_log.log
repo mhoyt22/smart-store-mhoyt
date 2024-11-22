@@ -149,3 +149,86 @@
 2024-11-22 09:14:03.135 | INFO     | __main__:load_data_to_db:81 - 'sales' data loaded.
 2024-11-22 09:14:03.137 | INFO     | __main__:load_data_to_db:86 - Data successfully loaded into database and connection closed.
 2024-11-22 09:14:03.137 | INFO     | __main__:main:97 - Finished etl_to_dw complete.
+2024-11-22 09:47:47.626 | INFO     | __main__:main:107 - Starting etl_to_dw ...
+2024-11-22 09:47:47.628 | INFO     | __main__:load_data_to_db:49 - Dropping existing tables if they exist...
+2024-11-22 09:47:47.647 | INFO     | __main__:load_data_to_db:54 - Existing tables dropped.
+2024-11-22 09:47:47.647 | INFO     | __main__:load_data_to_db:59 - Extracting 'customers' data...
+2024-11-22 09:47:47.672 | INFO     | __main__:load_data_to_db:61 - 'customers' data extracted.
+2024-11-22 09:47:47.672 | INFO     | __main__:load_data_to_db:65 - Loading 'customers' data...
+2024-11-22 09:47:47.694 | INFO     | __main__:load_data_to_db:67 - 'customers' data loaded.
+2024-11-22 09:47:47.695 | INFO     | __main__:load_data_to_db:72 - Extracting 'products' data...
+2024-11-22 09:47:47.723 | INFO     | __main__:load_data_to_db:74 - 'products' data extracted.
+2024-11-22 09:47:47.723 | INFO     | __main__:load_data_to_db:78 - Loading 'prodcuts' data...
+2024-11-22 09:47:47.747 | INFO     | __main__:load_data_to_db:80 - 'products' data loaded.
+2024-11-22 09:47:47.748 | INFO     | __main__:load_data_to_db:85 - Extracting 'sales' data...
+2024-11-22 09:47:47.771 | INFO     | __main__:load_data_to_db:87 - 'sales' data extracted.
+2024-11-22 09:47:47.772 | INFO     | __main__:load_data_to_db:91 - Loading 'sales' data...
+2024-11-22 09:47:47.788 | INFO     | __main__:load_data_to_db:93 - 'sales' data loaded.
+2024-11-22 09:47:47.789 | INFO     | __main__:load_data_to_db:98 - Data successfully loaded into database and connection closed.
+2024-11-22 09:47:47.790 | INFO     | __main__:main:109 - Finished etl_to_dw complete.
+2024-11-22 12:21:16.179 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:21:16.181 | ERROR    | __main__:delete_existing_records:35 - Error deleting records: no such table: customer
+2024-11-22 12:21:16.182 | ERROR    | __main__:load_data_to_db:154 - Error during database load: no such table: customer
+2024-11-22 12:21:16.184 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:24:30.838 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:24:30.842 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:24:30.897 | ERROR    | __main__:insert_customers:64 - Error inserting customers: table customers has no column named customer_id
+2024-11-22 12:24:30.898 | ERROR    | __main__:load_data_to_db:154 - Error during database load: table customers has no column named customer_id
+2024-11-22 12:24:30.899 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:26:31.910 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:26:31.913 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:26:31.936 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 12:26:31.944 | ERROR    | __main__:insert_products:92 - Error inserting products: table products has no column named product_id
+2024-11-22 12:26:31.945 | ERROR    | __main__:load_data_to_db:154 - Error during database load: table products has no column named product_id
+2024-11-22 12:26:31.946 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:29:21.285 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-22 12:29:21.286 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-22 12:29:21.287 | INFO     | __main__:main:86 - Data warehouse creation complete.
+2024-11-22 12:30:49.891 | INFO     | __main__:main:84 - Starting data warehouse creation...
+2024-11-22 12:30:49.913 | INFO     | __main__:create_dw:72 - Data warehouse created successfully.
+2024-11-22 12:30:49.913 | INFO     | __main__:main:86 - Data warehouse creation complete.
+2024-11-22 12:31:19.069 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:31:19.072 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:31:19.081 | ERROR    | __main__:insert_customers:64 - Error inserting customers: table "customers" already exists
+2024-11-22 12:31:19.082 | ERROR    | __main__:load_data_to_db:154 - Error during database load: table "customers" already exists
+2024-11-22 12:31:19.083 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:35:27.472 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:35:27.478 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:35:27.507 | ERROR    | __main__:insert_customers:64 - Error inserting customers: table "customers" already exists
+2024-11-22 12:35:27.508 | ERROR    | __main__:load_data_to_db:154 - Error during database load: table "customers" already exists
+2024-11-22 12:35:27.510 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:37:16.272 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:37:16.277 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:37:16.346 | ERROR    | __main__:insert_customers:64 - Error inserting customers: table "customers" already exists
+2024-11-22 12:37:16.349 | ERROR    | __main__:load_data_to_db:154 - Error during database load: table "customers" already exists
+2024-11-22 12:37:16.351 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:45:07.006 | INFO     | __main__:main:166 - Starting etl_to_dw ...
+2024-11-22 12:45:07.035 | ERROR    | __main__:load_data_to_db:158 - Error during ETL: name 'conn' is not defined
+2024-11-22 12:45:37.003 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:45:37.006 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:45:37.087 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 12:45:37.102 | INFO     | __main__:insert_products:90 - 'products' data loaded.
+2024-11-22 12:45:37.103 | ERROR    | __main__:load_data_to_db:157 - Error during ETL: cannot access local variable 'customers_df' where it is not associated with a value
+2024-11-22 12:47:48.545 | INFO     | __main__:main:165 - Starting etl_to_dw ...
+2024-11-22 12:47:48.563 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:47:48.592 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 12:47:48.611 | INFO     | __main__:insert_products:90 - 'products' data loaded.
+2024-11-22 12:47:48.625 | INFO     | __main__:insert_sales:121 - 'sales' data loaded.
+2024-11-22 12:47:48.627 | INFO     | __main__:load_data_to_db:151 - Prepared data successfully loaded into the data warehouse.
+2024-11-22 12:47:48.628 | INFO     | __main__:main:167 - Finished etl_to_dw complete.
+2024-11-22 12:53:04.101 | INFO     | __main__:main:166 - Starting etl_to_dw ...
+2024-11-22 12:53:04.142 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:53:04.233 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 12:53:04.248 | INFO     | __main__:insert_products:90 - 'products' data loaded.
+2024-11-22 12:53:04.263 | INFO     | __main__:insert_sales:121 - 'sales' data loaded.
+2024-11-22 12:53:04.265 | INFO     | __main__:load_data_to_db:152 - Prepared data successfully loaded into the data warehouse.
+2024-11-22 12:53:04.266 | INFO     | __main__:main:168 - Finished etl_to_dw complete.
+2024-11-22 12:53:59.188 | INFO     | __main__:main:166 - Starting etl_to_dw ...
+2024-11-22 12:53:59.208 | INFO     | __main__:delete_existing_records:33 - Existing records deleted from all tables.
+2024-11-22 12:53:59.241 | INFO     | __main__:insert_customers:62 - 'customers' data loaded.
+2024-11-22 12:53:59.262 | INFO     | __main__:insert_products:90 - 'products' data loaded.
+2024-11-22 12:53:59.285 | INFO     | __main__:insert_sales:121 - 'sales' data loaded.
+2024-11-22 12:53:59.287 | INFO     | __main__:load_data_to_db:152 - Prepared data successfully loaded into the data warehouse.
+2024-11-22 12:53:59.288 | INFO     | __main__:main:168 - Finished etl_to_dw complete.
+2024-11-22 12:56:13.986 | INFO     | __main__:main:167 - Starting etl_to_dw ...
+2024-11-22 12:56:14.012 | ERROR    | __main__:load_data_to_db:159 - Error during ETL: name 'conn' is not defined
