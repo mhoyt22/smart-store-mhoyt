@@ -242,3 +242,9 @@
 2024-11-22 13:00:31.345 | INFO     | __main__:insert_sales:121 - 'sales' data loaded.
 2024-11-22 13:00:31.346 | INFO     | __main__:load_data_to_db:152 - Prepared data successfully loaded into the data warehouse.
 2024-11-22 13:00:31.348 | INFO     | __main__:main:168 - Finished etl_to_dw complete.
+2024-11-25 14:33:51.700 | INFO     | __main__:main:98 - Starting OLAP Cubing process...
+2024-11-25 14:33:51.714 | INFO     | __main__:ingest_sales_data_from_dw:54 - Sales data successfully loaded from SQLite data warehouse.
+2024-11-25 14:33:51.724 | INFO     | __main__:create_olap_cube:69 - OLAP cube created with dimensions: ['store_id', 'discount_percent', 'DayOfWeek']
+2024-11-25 14:33:51.728 | INFO     | __main__:write_cube_to_csv:91 - OLAP cube saved to data\olap_cubing_outputs\discount_impact_analysis_cube.csv.
+2024-11-25 14:33:51.728 | INFO     | __main__:main:114 - OLAP Cubing process completed successfully.
+2024-11-25 14:33:51.728 | INFO     | __main__:main:115 - Please see outputs in data\olap_cubing_outputs
