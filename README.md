@@ -151,6 +151,17 @@ Calculated the total sales_amount for each store per day of the week. <br><br>
 Identified the store with the maximum sales for each day using the idxmax() function.<br><br>
 ### Results
 
+
+| Day of the Week | Store ID | Max Sales Amount ($) |
+|------------------|----------|----------------------|
+| Friday           | 401      | 6470.56             |
+| Monday           | 406      | 7267.38             |
+| Saturday         | 405      | 7787.82             |
+| Sunday           | 401      | 6630.40             |
+| Thursday         | 402      | 14539.74           |
+| Tuesday          | 402      | 7059.88             |
+| Wednesday        | 404      | 8134.40             |
+
 ![](output.png)
 **Image created by ChatGPT
 #### Output
