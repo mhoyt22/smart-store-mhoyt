@@ -1,6 +1,6 @@
 """
 Module 6: OLAP and Cubing Script
-File: scripts/olap_cubing.py
+File: scripts/olap/olap_cubing.py
 
 A cube is a precomputed, multidimensional structure 
 where data is aggregated across all possible 
@@ -31,11 +31,11 @@ import pathlib
 import sys
 
 # For local imports, temporarily add project root to Python sys.path
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from utils.logger import logger  # noqa: E402
+from utils.logger import logger
 
 # Constants
 DW_DIR: pathlib.Path = pathlib.Path("data").joinpath("dw")
