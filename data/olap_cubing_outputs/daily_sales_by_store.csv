@@ -1,4 +1,4 @@
-DayOfWeek,store_id,max_sales_amount
+day_of_week,store_id,max_sales_amount
 Friday,401,6470.56
 Monday,406,7267.38
 Saturday,405,7787.82

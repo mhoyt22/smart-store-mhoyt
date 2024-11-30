@@ -260,3 +260,9 @@
 2024-11-30 13:38:19.814 | INFO     | __main__:write_cube_to_csv:91 - OLAP cube saved to data\olap_cubing_outputs\discount_impact_analysis_cube.csv.
 2024-11-30 13:38:19.814 | INFO     | __main__:main:114 - OLAP Cubing process completed successfully.
 2024-11-30 13:38:19.815 | INFO     | __main__:main:115 - Please see outputs in data\olap_cubing_outputs
+2024-11-30 14:41:58.592 | INFO     | __main__:main:77 - Starting OLAP Cubing process for daily sales by store...
+2024-11-30 14:41:58.600 | INFO     | __main__:ingest_sales_data_from_dw:40 - Sales data successfully loaded from SQLite data warehouse.
+2024-11-30 14:41:58.624 | INFO     | __main__:create_daily_sales_cube:59 - Daily sales cube created with the highest sales by store and day of the week.
+2024-11-30 14:41:58.636 | INFO     | __main__:write_cube_to_csv:70 - OLAP cube saved to data\olap_cubing_outputs\daily_sales_by_store.csv.
+2024-11-30 14:41:58.638 | INFO     | __main__:main:81 - OLAP Cubing process completed successfully.
+2024-11-30 14:41:58.640 | INFO     | __main__:main:82 - Please see outputs in data\olap_cubing_outputs

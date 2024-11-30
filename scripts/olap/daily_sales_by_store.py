@@ -47,13 +47,13 @@ def create_daily_sales_cube(sales_df: pd.DataFrame) -> pd.DataFrame:
     """Aggregate daily sales by store and identify the store with the most sales by day of the week."""
     try:
         sales_df["sales_date"] = pd.to_datetime(sales_df["sales_date"])
-        sales_df["DayOfWeek"] = sales_df["sales_date"].dt.day_name()
+        sales_df["day_of_week"] = sales_df["sales_date"].dt.day_name()
 
         # Aggregate sales by store and day of the week
-        grouped = sales_df.groupby(["DayOfWeek", "store_id"])["sales_amount"].sum().reset_index()
+        grouped = sales_df.groupby(["day_of_week", "store_id"])["sales_amount"].sum().reset_index()
 
         # Identify the store with the highest sales for each day of the week
-        max_sales = grouped.loc[grouped.groupby("DayOfWeek")["sales_amount"].idxmax()].reset_index(drop=True)
+        max_sales = grouped.loc[grouped.groupby("day_of_week")["sales_amount"].idxmax()].reset_index(drop=True)
         max_sales.rename(columns={"sales_amount": "max_sales_amount"}, inplace=True)
 
         logger.info("Daily sales cube created with the highest sales by store and day of the week.")
