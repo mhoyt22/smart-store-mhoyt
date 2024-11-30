@@ -12,6 +12,16 @@
       - [products](#products)
       - [sales](#sales)
     - [ETL to DW](#etl-to-dw)
+  - [Daily Sales by Store OLAP Analysis](#daily-sales-by-store-olap-analysis)
+    - [Business Goal](#business-goal)
+    - [Data Source](#data-source)
+    - [Tools](#tools)
+    - [Workflow \& Logic](#workflow--logic)
+    - [Results](#results)
+      - [Output](#output)
+      - [Insights](#insights)
+      - [Suggested Actions](#suggested-actions)
+    - [Challenges](#challenges)
   - [Commit to GitHub](#commit-to-github)
 
 ## Project Setup
@@ -107,6 +117,73 @@ Foreign Key(s): customer_id, product_id, store_id, campaign_id
 ```bash
 py scripts\create_dw.py
 ```
+
+## Daily Sales by Store OLAP Analysis
+### Business Goal
+The goal of this analysis is to determine which store has the highest sales for each day of the week. This information helps decision-makers understand store patterns for optimizing staffing, inventory management, and promotions tailored to specific days of the week.
+
+### Data Source
+The analysis used data stored in our data warehouse (smart_sales.db) in the sales table. Our prepared data is used to create the warehouse content. <br> <br>
+<u>Data Warehouse:</u> data/dw/smart_sales.db <br>
+<u>Columns Used:</u> sales_date, store_id, sales_amount <br> <br>
+<u>Raw Data:</u> data/raw/sales_data.csv <br>
+<u>Prepared Data:</u> data/prepared/sales_data_prepared <br>
+
+### Tools
+<u>Python:</u> This tool was used due to it's universal usage, robust libraries and ability to automate OLAP. <br><br>
+<u>Libraries Used:</u> pandas, sqlite3, utils.logger
+
+### Workflow & Logic
+<u>Key Dimensions:</u>
+```bash
+day_of_week
+store_id
+sales_amount (aggregated by DayOfWeek and store_id)
+```
+<u>Data Preparation:</u>
+
+The sales_date column was converted to a datetime format to extract the day of the week (day_of_week).<br><br>
+A subset of the data with sales_amount, store_id, and day_of_week was created. <br><br>
+<u>Aggregation Logic:</u>
+
+Grouped data by day_of_week and store_id.<br><br>
+Calculated the total sales_amount for each store per day of the week. <br><br>
+Identified the store with the maximum sales for each day using the idxmax() function.<br><br>
+### Results
+
+![](output.png)
+#### Output
+
+Saved the final OLAP cube as a CSV file named daily_sales_by_store.csv in the data/olap_cubing_outputs directory.
+
+#### Insights
+<u>Store-Specific Trends:</u>
+
+Store 401: <br>
+Leads in sales on both Friday and Sunday, indicating strong performance during the weekend.<br><br>
+Store 402: <br>
+Dominates on Thursday with exceptionally high sales (14,539.74) and also performs well on Tuesday. <br><br>
+Store 404: <br>
+Peaks on Wednesday, suggesting midweek promotions or events drive its performance.<br><br>
+Store 406:<br>
+Achieves high sales on Monday, which could indicate being in a location frequented by people starting their week (e.g., near schools or workplaces). <br><br>
+Store 405:<br>
+Leads on Saturday, with the high sales of 7,787.82. This suggests it is a popular weekend destination.<br><br>
+<u>Day-Specific Trends:</u>
+
+Thursday (Store 402) <br> has the highest sales overall (14,539.74), significantly outpacing other days. This suggests a notable pattern such as a recurring promotion or event that brings in customers on this specific day. <br><br>
+Saturday (Store 405) has the second-highest sales (7,787.82), highlighting its importance as a shopping day for customers.
+Friday and Sunday also show strong weekend sales for Store 401, reinforcing the weekend shopping trend.
+
+#### Suggested Actions
+1. Investigate what drives the massive sales on Thursdays and replicate those strategies (e.g., discounts, events) on other days.
+2. With strong weekend sales, Store 405 and 401 could introduce extended hours, special promotions, or loyalty programs targeting weekend shoppers to further boost performance.
+3. Optimize staffing and inventory based on daily sales by store.
+4. Promote weekday sales for underperforming stores. For example, introduce loyalty rewards or discounts for customers visiting on off-peak days. 
+
+### Challenges
+<u>Import Errors:</u>
+Initially, the script encountered a ModuleNotFoundError for the utils package. This was resolved by adding the project root directory to the sys.path.
 
 ## Commit to GitHub
 
