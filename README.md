@@ -152,6 +152,7 @@ Identified the store with the maximum sales for each day using the idxmax() func
 ### Results
 
 ![](output.png)
+**Image created by ChatGPT
 #### Output
 
 Saved the final OLAP cube as a CSV file named daily_sales_by_store.csv in the data/olap_cubing_outputs directory.
