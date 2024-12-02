@@ -39,9 +39,9 @@ Each project demonstrates the use of a scalable pipeline architecture tailored t
 - [Spark Internet of Things (IOT) Project](docs/spark-iot.md) - aggregates and visualizes IoT sensor data to detect anomalies, monitor device usage, and analyze trends.
   
 ## GETTING STARTED
-### Set up your machine
+### Set up your machine (1 hour)
 Follow the instructions to set up your system first: [Setup for Windows](SETUP_SPARK_WINDOWS.md)
-### Activate your local virtual enviroment & install dependencies
+### Activate your local virtual enviroment & install dependencies (20 minutes)
 1. Update smart sales repository layout (or update scripts to utilize current layout) to match the below. 
 2. Follow these steps to manage local enviroment: [Virtual Enviroment](VIRTUAL_ENV.md)
 ```bash
@@ -62,7 +62,7 @@ project/
 ├── README.md
 └── requirements.txt
 ```
-### Run PySpark Basic Script
+### Run PySpark Basic Script (30 minutes)
 
 1. In VS Code, open a PowerShell terminal in the root project folder. 
 
@@ -84,14 +84,14 @@ Protip: After running the command once, you can usually get it back by typing ju
 
 If you get a Windows Firewall alert regarding the JDK, click Allow. 
 
-### Enhance Functionality
+### Enhance Functionality (30-60 minutes)
 Add or update the files to make your own functionality. 
 
 Paste the contents from the file provided in this repo.
 
 Execute your scripts - or experiment with a Jupyter notebook.
 
-### Troubleshooting
+### Troubleshooting (30 minutes)
 ```powershell
 $Env:HADOOP_HOME
 
