@@ -22,6 +22,7 @@
       - [Insights](#insights)
       - [Suggested Actions](#suggested-actions)
     - [Challenges](#challenges)
+  - [Implement Spark](#implement-spark)
   - [Commit to GitHub](#commit-to-github)
 
 ## Project Setup
@@ -196,6 +197,9 @@ Friday and Sunday also show strong weekend sales for Store 401, reinforcing the 
 ### Challenges
 <u>Import Errors:</u>
 Initially, the script encountered a ModuleNotFoundError for the utils package. This was resolved by adding the project root directory to the sys.path.
+
+## Implement Spark
+[README_SPARK](./SPARK/README_SPARK.md)
 
 ## Commit to GitHub
 

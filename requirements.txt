@@ -12,7 +12,6 @@
 # If it gets messed up, we can delete .venv and recreate it at any time. 
 
 # Run the following command to create a virtual environment in the project root.
-
 ### On Windows, Use PowerShell (not cmd) - don't include the #:
 # py -m venv .venv
 
@@ -68,6 +67,9 @@
 # Keep pip upgraded (manages the installation of packages)
 pip
 
+# Include wheel to ensure modern package installation support
+wheel
+
 # Easy logging to keep track of code execution 
 loguru
 
@@ -85,8 +87,8 @@ seaborn
 plotly
 
 # Work with Apache Spark for big data
-#pyspark==4.0.0.dev1
-#pyspark[sql]
+pyspark==3.5.3
+pyspark[sql]
 
 # Optional utility program to verify .venv and requirements
 git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
